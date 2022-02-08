@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Comerce Service</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Comerce Service</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 07 15:17:13 PKT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>105 seconds (105010 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='commerce_service.Createuser.create_local_user()'><b>create_local_user</b><br>Test class: commerce_service.Createuser</td>
+<td></td>
+<td>2</td>
+<td>commerce_service.Createuser@2d1ef81a</td></tr>
+<tr>
+<td title='commerce_service.Deleteaddress.create_address()'><b>create_address</b><br>Test class: commerce_service.Deleteaddress</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Deleteaddress@5aa9e4eb</td></tr>
+<tr>
+<td title='commerce_service.Resetpasword.reset_password()'><b>reset_password</b><br>Test class: commerce_service.Resetpasword</td>
+<td></td>
+<td>2</td>
+<td>commerce_service.Resetpasword@dd05255</td></tr>
+<tr>
+<td title='commerce_service.Unsetuserdefaultaddress.create_address()'><b>create_address</b><br>Test class: commerce_service.Unsetuserdefaultaddress</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Unsetuserdefaultaddress@3fc2959f</td></tr>
+<tr>
+<td title='commerce_service.Unsetuserdefaultaddress.unset_address()'><b>unset_address</b><br>Test class: commerce_service.Unsetuserdefaultaddress</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Unsetuserdefaultaddress@3fc2959f</td></tr>
+<tr>
+<td title='commerce_service.Createguestuser.login_user()'><b>login_user</b><br>Test class: commerce_service.Createguestuser</td>
+<td></td>
+<td>3</td>
+<td>commerce_service.Createguestuser@385c9627</td></tr>
+<tr>
+<td title='commerce_service.Setuserdefaultaddress.create_address()'><b>create_address</b><br>Test class: commerce_service.Setuserdefaultaddress</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Setuserdefaultaddress@10683d9d</td></tr>
+<tr>
+<td title='commerce_service.Userdetail.get_detail()'><b>get_detail</b><br>Test class: commerce_service.Userdetail</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Userdetail@44c03695</td></tr>
+<tr>
+<td title='commerce_service.Refreshtoken.login_user()'><b>login_user</b><br>Test class: commerce_service.Refreshtoken</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Refreshtoken@6989da5e</td></tr>
+<tr>
+<td title='commerce_service.Setuserdefaultaddress.login_user()'><b>login_user</b><br>Test class: commerce_service.Setuserdefaultaddress</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Setuserdefaultaddress@10683d9d</td></tr>
+<tr>
+<td title='commerce_service.Deleteaddress.login_user()'><b>login_user</b><br>Test class: commerce_service.Deleteaddress</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Deleteaddress@5aa9e4eb</td></tr>
+<tr>
+<td title='commerce_service.Updateuser.update_user()'><b>update_user</b><br>Test class: commerce_service.Updateuser</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Updateuser@682b2fa</td></tr>
+<tr>
+<td title='commerce_service.Createaddress.create_address()'><b>create_address</b><br>Test class: commerce_service.Createaddress</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Createaddress@7e6f74c</td></tr>
+<tr>
+<td title='commerce_service.Resetpasswordtoken.reset_password_token()'><b>reset_password_token</b><br>Test class: commerce_service.Resetpasswordtoken</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Resetpasswordtoken@139982de</td></tr>
+<tr>
+<td title='commerce_service.Updateuser.login_user()'><b>login_user</b><br>Test class: commerce_service.Updateuser</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Updateuser@682b2fa</td></tr>
+<tr>
+<td title='commerce_service.Addressbyid.login_user()'><b>login_user</b><br>Test class: commerce_service.Addressbyid</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Addressbyid@2f4948e4</td></tr>
+<tr>
+<td title='commerce_service.Setuserdefaultaddress.set_address()'><b>set_address</b><br>Test class: commerce_service.Setuserdefaultaddress</td>
+<td></td>
+<td>0</td>
+<td>commerce_service.Setuserdefaultaddress@10683d9d</td></tr>
+<tr>
+<td title='commerce_service.Userdetail.login_user()'><b>login_user</b><br>Test class: commerce_service.Userdetail</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Userdetail@44c03695</td></tr>
+<tr>
+<td title='commerce_service.Updateaddress.create_address()'><b>create_address</b><br>Test class: commerce_service.Updateaddress</td>
+<td></td>
+<td>0</td>
+<td>commerce_service.Updateaddress@6a78afa0</td></tr>
+<tr>
+<td title='commerce_service.Updateaddress.update_address()'><b>update_address</b><br>Test class: commerce_service.Updateaddress</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Updateaddress@6a78afa0</td></tr>
+<tr>
+<td title='commerce_service.Updateaddress.login_user()'><b>login_user</b><br>Test class: commerce_service.Updateaddress</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Updateaddress@6a78afa0</td></tr>
+<tr>
+<td title='commerce_service.Changepassword.login_user()'><b>login_user</b><br>Test class: commerce_service.Changepassword</td>
+<td></td>
+<td>2</td>
+<td>commerce_service.Changepassword@217ed35e</td></tr>
+<tr>
+<td title='commerce_service.Updateusername.update_name()'><b>update_name</b><br>Test class: commerce_service.Updateusername</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Updateusername@7dcf94f8</td></tr>
+<tr>
+<td title='commerce_service.Resetpasword.login_user()'><b>login_user</b><br>Test class: commerce_service.Resetpasword</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Resetpasword@dd05255</td></tr>
+<tr>
+<td title='commerce_service.Addressbyid.create_address()'><b>create_address</b><br>Test class: commerce_service.Addressbyid</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Addressbyid@2f4948e4</td></tr>
+<tr>
+<td title='commerce_service.Unsetuserdefaultaddress.login_user()'><b>login_user</b><br>Test class: commerce_service.Unsetuserdefaultaddress</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Unsetuserdefaultaddress@3fc2959f</td></tr>
+<tr>
+<td title='commerce_service.Updateusername.login_user()'><b>login_user</b><br>Test class: commerce_service.Updateusername</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Updateusername@7dcf94f8</td></tr>
+<tr>
+<td title='commerce_service.Login.login_user()'><b>login_user</b><br>Test class: commerce_service.Login</td>
+<td></td>
+<td>5</td>
+<td>commerce_service.Login@6150c3ec</td></tr>
+<tr>
+<td title='commerce_service.Deleteaddress.del_address()'><b>del_address</b><br>Test class: commerce_service.Deleteaddress</td>
+<td></td>
+<td>0</td>
+<td>commerce_service.Deleteaddress@5aa9e4eb</td></tr>
+<tr>
+<td title='commerce_service.Createguestuser.guest_user()'><b>guest_user</b><br>Test class: commerce_service.Createguestuser</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Createguestuser@385c9627</td></tr>
+<tr>
+<td title='commerce_service.Getaddressofalluser.login_user()'><b>login_user</b><br>Test class: commerce_service.Getaddressofalluser</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Getaddressofalluser@1f2586d6</td></tr>
+<tr>
+<td title='commerce_service.Getaddressofalluser.address_of_alluser()'><b>address_of_alluser</b><br>Test class: commerce_service.Getaddressofalluser</td>
+<td></td>
+<td>0</td>
+<td>commerce_service.Getaddressofalluser@1f2586d6</td></tr>
+<tr>
+<td title='commerce_service.Changepassword.change_password()'><b>change_password</b><br>Test class: commerce_service.Changepassword</td>
+<td></td>
+<td>2</td>
+<td>commerce_service.Changepassword@217ed35e</td></tr>
+<tr>
+<td title='commerce_service.Refreshtoken.token_refresh()'><b>token_refresh</b><br>Test class: commerce_service.Refreshtoken</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Refreshtoken@6989da5e</td></tr>
+<tr>
+<td title='commerce_service.Resetpasswordtoken.login_user()'><b>login_user</b><br>Test class: commerce_service.Resetpasswordtoken</td>
+<td></td>
+<td>3</td>
+<td>commerce_service.Resetpasswordtoken@139982de</td></tr>
+<tr>
+<td title='commerce_service.Addressbyid.get_addressby_id()'><b>get_addressby_id</b><br>Test class: commerce_service.Addressbyid</td>
+<td></td>
+<td>1</td>
+<td>commerce_service.Addressbyid@2f4948e4</td></tr>
+<tr>
+<td title='commerce_service.Createaddress.login_user()'><b>login_user</b><br>Test class: commerce_service.Createaddress</td>
+<td></td>
+<td>4</td>
+<td>commerce_service.Createaddress@7e6f74c</td></tr>
+</table><p>
+</body>
+</html>

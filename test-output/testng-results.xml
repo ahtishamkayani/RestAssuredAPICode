@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="37" passed="37" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-08T17:31:22 PKT" name="API&#039;S Suite" finished-at="2022-02-08T17:33:11 PKT" duration-ms="108970">
+    <groups>
+    </groups>
+    <test started-at="2022-02-08T17:31:22 PKT" name="Report Test" finished-at="2022-02-08T17:33:11 PKT" duration-ms="108970">
+      <class name="commerce_service.Updateusername">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Updateusername@229f66ed]" started-at="2022-02-08T17:33:04 PKT" name="login_user" finished-at="2022-02-08T17:33:09 PKT" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="update_name()[pri:16, instance:commerce_service.Updateusername@229f66ed]" started-at="2022-02-08T17:33:09 PKT" name="update_name" finished-at="2022-02-08T17:33:11 PKT" duration-ms="1920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_name -->
+      </class> <!-- commerce_service.Updateusername -->
+      <class name="commerce_service.Resetpasswordtoken">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Resetpasswordtoken@682b2fa]" started-at="2022-02-08T17:32:45 PKT" name="login_user" finished-at="2022-02-08T17:32:49 PKT" duration-ms="4289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="reset_password_token()[pri:14, instance:commerce_service.Resetpasswordtoken@682b2fa]" started-at="2022-02-08T17:32:49 PKT" name="reset_password_token" finished-at="2022-02-08T17:32:51 PKT" duration-ms="1828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset_password_token -->
+      </class> <!-- commerce_service.Resetpasswordtoken -->
+      <class name="commerce_service.Unsetuserdefaultaddress">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Unsetuserdefaultaddress@5aa9e4eb]" started-at="2022-02-08T17:32:20 PKT" name="login_user" finished-at="2022-02-08T17:32:24 PKT" duration-ms="4142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="create_address()[pri:4, instance:commerce_service.Unsetuserdefaultaddress@5aa9e4eb]" started-at="2022-02-08T17:32:24 PKT" name="create_address" finished-at="2022-02-08T17:32:26 PKT" duration-ms="1622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_address -->
+        <test-method signature="unset_address()[pri:9, instance:commerce_service.Unsetuserdefaultaddress@5aa9e4eb]" started-at="2022-02-08T17:32:26 PKT" name="unset_address" finished-at="2022-02-08T17:32:28 PKT" duration-ms="1743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unset_address -->
+      </class> <!-- commerce_service.Unsetuserdefaultaddress -->
+      <class name="commerce_service.Updateuser">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Updateuser@217ed35e]" started-at="2022-02-08T17:32:51 PKT" name="login_user" finished-at="2022-02-08T17:32:56 PKT" duration-ms="5086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="update_user()[pri:13, instance:commerce_service.Updateuser@217ed35e]" started-at="2022-02-08T17:32:56 PKT" name="update_user" finished-at="2022-02-08T17:32:58 PKT" duration-ms="2591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_user -->
+      </class> <!-- commerce_service.Updateuser -->
+      <class name="commerce_service.Setuserdefaultaddress">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Setuserdefaultaddress@3fc2959f]" started-at="2022-02-08T17:32:12 PKT" name="login_user" finished-at="2022-02-08T17:32:16 PKT" duration-ms="3986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="create_address()[pri:4, instance:commerce_service.Setuserdefaultaddress@3fc2959f]" started-at="2022-02-08T17:32:16 PKT" name="create_address" finished-at="2022-02-08T17:32:18 PKT" duration-ms="2343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_address -->
+        <test-method signature="set_address()[pri:8, instance:commerce_service.Setuserdefaultaddress@3fc2959f]" started-at="2022-02-08T17:32:18 PKT" name="set_address" finished-at="2022-02-08T17:32:20 PKT" duration-ms="1732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_address -->
+      </class> <!-- commerce_service.Setuserdefaultaddress -->
+      <class name="commerce_service.Updateaddress">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Updateaddress@2f4948e4]" started-at="2022-02-08T17:31:51 PKT" name="login_user" finished-at="2022-02-08T17:31:56 PKT" duration-ms="4197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="create_address()[pri:4, instance:commerce_service.Updateaddress@2f4948e4]" started-at="2022-02-08T17:31:56 PKT" name="create_address" finished-at="2022-02-08T17:31:57 PKT" duration-ms="1539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_address -->
+        <test-method signature="update_address()[pri:5, instance:commerce_service.Updateaddress@2f4948e4]" started-at="2022-02-08T17:31:57 PKT" name="update_address" finished-at="2022-02-08T17:31:58 PKT" duration-ms="1313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_address -->
+      </class> <!-- commerce_service.Updateaddress -->
+      <class name="commerce_service.Addressbyid">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Addressbyid@1f2586d6]" started-at="2022-02-08T17:31:58 PKT" name="login_user" finished-at="2022-02-08T17:32:04 PKT" duration-ms="5136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="create_address()[pri:4, instance:commerce_service.Addressbyid@1f2586d6]" started-at="2022-02-08T17:32:04 PKT" name="create_address" finished-at="2022-02-08T17:32:04 PKT" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_address -->
+        <test-method signature="get_addressby_id()[pri:6, instance:commerce_service.Addressbyid@1f2586d6]" started-at="2022-02-08T17:32:04 PKT" name="get_addressby_id" finished-at="2022-02-08T17:32:06 PKT" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_addressby_id -->
+      </class> <!-- commerce_service.Addressbyid -->
+      <class name="commerce_service.Login">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Login@44c03695]" started-at="2022-02-08T17:31:26 PKT" name="login_user" finished-at="2022-02-08T17:31:31 PKT" duration-ms="5625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+      </class> <!-- commerce_service.Login -->
+      <class name="commerce_service.Createaddress">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Createaddress@dd05255]" started-at="2022-02-08T17:31:38 PKT" name="login_user" finished-at="2022-02-08T17:31:43 PKT" duration-ms="4678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="create_address()[pri:4, instance:commerce_service.Createaddress@dd05255]" started-at="2022-02-08T17:31:43 PKT" name="create_address" finished-at="2022-02-08T17:31:44 PKT" duration-ms="1355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_address -->
+      </class> <!-- commerce_service.Createaddress -->
+      <class name="commerce_service.Createguestuser">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Createguestuser@139982de]" started-at="2022-02-08T17:32:40 PKT" name="login_user" finished-at="2022-02-08T17:32:44 PKT" duration-ms="4056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="guest_user()[pri:12, instance:commerce_service.Createguestuser@139982de]" started-at="2022-02-08T17:32:44 PKT" name="guest_user" finished-at="2022-02-08T17:32:45 PKT" duration-ms="1084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guest_user -->
+      </class> <!-- commerce_service.Createguestuser -->
+      <class name="commerce_service.Createuser">
+        <test-method signature="create_local_user()[pri:0, instance:commerce_service.Createuser@4c402120]" started-at="2022-02-08T17:31:22 PKT" name="create_local_user" finished-at="2022-02-08T17:31:26 PKT" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_local_user -->
+      </class> <!-- commerce_service.Createuser -->
+      <class name="commerce_service.Getaddressofalluser">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Getaddressofalluser@10683d9d]" started-at="2022-02-08T17:32:06 PKT" name="login_user" finished-at="2022-02-08T17:32:10 PKT" duration-ms="4171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="address_of_alluser()[pri:7, instance:commerce_service.Getaddressofalluser@10683d9d]" started-at="2022-02-08T17:32:10 PKT" name="address_of_alluser" finished-at="2022-02-08T17:32:12 PKT" duration-ms="1685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- address_of_alluser -->
+      </class> <!-- commerce_service.Getaddressofalluser -->
+      <class name="commerce_service.Refreshtoken">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Refreshtoken@385c9627]" started-at="2022-02-08T17:32:34 PKT" name="login_user" finished-at="2022-02-08T17:32:38 PKT" duration-ms="3435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="token_refresh()[pri:11, instance:commerce_service.Refreshtoken@385c9627]" started-at="2022-02-08T17:32:38 PKT" name="token_refresh" finished-at="2022-02-08T17:32:40 PKT" duration-ms="1682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- token_refresh -->
+      </class> <!-- commerce_service.Refreshtoken -->
+      <class name="commerce_service.Changepassword">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Changepassword@7dcf94f8]" started-at="2022-02-08T17:32:58 PKT" name="login_user" finished-at="2022-02-08T17:33:03 PKT" duration-ms="4417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="change_password()[pri:15, instance:commerce_service.Changepassword@7dcf94f8]" started-at="2022-02-08T17:33:03 PKT" name="change_password" finished-at="2022-02-08T17:33:04 PKT" duration-ms="1570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_password -->
+      </class> <!-- commerce_service.Changepassword -->
+      <class name="commerce_service.Deleteaddress">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Deleteaddress@6989da5e]" started-at="2022-02-08T17:32:28 PKT" name="login_user" finished-at="2022-02-08T17:32:33 PKT" duration-ms="4866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="create_address()[pri:4, instance:commerce_service.Deleteaddress@6989da5e]" started-at="2022-02-08T17:32:33 PKT" name="create_address" finished-at="2022-02-08T17:32:33 PKT" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_address -->
+        <test-method signature="del_address()[pri:10, instance:commerce_service.Deleteaddress@6989da5e]" started-at="2022-02-08T17:32:33 PKT" name="del_address" finished-at="2022-02-08T17:32:34 PKT" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- del_address -->
+      </class> <!-- commerce_service.Deleteaddress -->
+      <class name="commerce_service.Resetpasword">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Resetpasword@6a78afa0]" started-at="2022-02-08T17:31:44 PKT" name="login_user" finished-at="2022-02-08T17:31:48 PKT" duration-ms="4145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="reset_password()[pri:2, instance:commerce_service.Resetpasword@6a78afa0]" started-at="2022-02-08T17:31:48 PKT" name="reset_password" finished-at="2022-02-08T17:31:51 PKT" duration-ms="3133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset_password -->
+      </class> <!-- commerce_service.Resetpasword -->
+      <class name="commerce_service.Userdetail">
+        <test-method signature="login_user()[pri:1, instance:commerce_service.Userdetail@7e6f74c]" started-at="2022-02-08T17:31:31 PKT" name="login_user" finished-at="2022-02-08T17:31:36 PKT" duration-ms="4919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_user -->
+        <test-method signature="get_detail()[pri:3, instance:commerce_service.Userdetail@7e6f74c]" started-at="2022-02-08T17:31:36 PKT" name="get_detail" finished-at="2022-02-08T17:31:38 PKT" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_detail -->
+      </class> <!-- commerce_service.Userdetail -->
+    </test> <!-- Report Test -->
+  </suite> <!-- API'S Suite -->
+</testng-results>

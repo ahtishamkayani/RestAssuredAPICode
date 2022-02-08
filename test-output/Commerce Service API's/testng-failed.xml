@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Commerce Service API&#039;s]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Comerce Service(failed)">
+    <classes>
+      <class name="commerce_service.Updateusername">
+        <methods>
+          <include name="update_name"/>
+        </methods>
+      </class> <!-- commerce_service.Updateusername -->
+      <class name="commerce_service.Createuser">
+        <methods>
+          <include name="create_local_user"/>
+        </methods>
+      </class> <!-- commerce_service.Createuser -->
+    </classes>
+  </test> <!-- Comerce Service(failed) -->
+</suite> <!-- Failed suite [Commerce Service API's] -->

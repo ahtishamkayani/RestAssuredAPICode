@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API'S Suite">
+	<test thread-count="5" name="Report Test">
+		<classes>
+			<class name="commerce_service.Createuser" />
+			<class name="commerce_service.Login" />
+			<class name="commerce_service.Userdetail" />
+			<class name="commerce_service.Createaddress" />
+			<class name="commerce_service.Resetpasword" />
+			<class name="commerce_service.Updateaddress" />
+			<class name="commerce_service.Addressbyid" />
+			<class name="commerce_service.Getaddressofalluser" />
+			<class name="commerce_service.Setuserdefaultaddress" />
+			<class name="commerce_service.Unsetuserdefaultaddress" />
+			<class name="commerce_service.Deleteaddress" />
+			<class name="commerce_service.Refreshtoken" />
+			<class name="commerce_service.Createguestuser" />
+			<class name="commerce_service.Resetpasswordtoken" />
+			<class name="commerce_service.Updateuser" />
+			<class name="commerce_service.Changepassword" />
+			<class name="commerce_service.Updateusername" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
