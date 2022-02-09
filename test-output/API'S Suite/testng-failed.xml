@@ -3,111 +3,12 @@
 <suite name="Failed suite [API&#039;S Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Report Test(failed)">
     <classes>
-      <class name="commerce_service.Createuser">
-        <methods>
-          <include name="create_local_user"/>
-        </methods>
-      </class> <!-- commerce_service.Createuser -->
-      <class name="commerce_service.Unsetuserdefaultaddress">
-        <methods>
-          <include name="login_user"/>
-          <include name="unset_address"/>
-          <include name="create_address"/>
-        </methods>
-      </class> <!-- commerce_service.Unsetuserdefaultaddress -->
-      <class name="commerce_service.Updateaddress">
-        <methods>
-          <include name="login_user"/>
-          <include name="update_address"/>
-          <include name="create_address"/>
-        </methods>
-      </class> <!-- commerce_service.Updateaddress -->
-      <class name="commerce_service.Userdetail">
-        <methods>
-          <include name="login_user"/>
-          <include name="get_detail"/>
-        </methods>
-      </class> <!-- commerce_service.Userdetail -->
-      <class name="commerce_service.Resetpasswordtoken">
-        <methods>
-          <include name="login_user"/>
-          <include name="reset_password_token"/>
-        </methods>
-      </class> <!-- commerce_service.Resetpasswordtoken -->
-      <class name="commerce_service.Deleteaddress">
-        <methods>
-          <include name="login_user"/>
-          <include name="del_address"/>
-          <include name="create_address"/>
-        </methods>
-      </class> <!-- commerce_service.Deleteaddress -->
-      <class name="commerce_service.Createguestuser">
-        <methods>
-          <include name="login_user"/>
-          <include name="guest_user"/>
-        </methods>
-      </class> <!-- commerce_service.Createguestuser -->
-      <class name="commerce_service.Refreshtoken">
-        <methods>
-          <include name="login_user"/>
-          <include name="token_refresh"/>
-        </methods>
-      </class> <!-- commerce_service.Refreshtoken -->
-      <class name="commerce_service.Setuserdefaultaddress">
-        <methods>
-          <include name="login_user"/>
-          <include name="create_address"/>
-          <include name="set_address"/>
-        </methods>
-      </class> <!-- commerce_service.Setuserdefaultaddress -->
-      <class name="commerce_service.Addressbyid">
-        <methods>
-          <include name="login_user"/>
-          <include name="get_addressby_id"/>
-          <include name="create_address"/>
-        </methods>
-      </class> <!-- commerce_service.Addressbyid -->
-      <class name="commerce_service.Login">
-        <methods>
-          <include name="login_user"/>
-        </methods>
-      </class> <!-- commerce_service.Login -->
-      <class name="commerce_service.Changepassword">
-        <methods>
-          <include name="login_user"/>
-          <include name="change_password"/>
-        </methods>
-      </class> <!-- commerce_service.Changepassword -->
-      <class name="commerce_service.Resetpasword">
-        <methods>
-          <include name="login_user"/>
-          <include name="reset_password"/>
-        </methods>
-      </class> <!-- commerce_service.Resetpasword -->
-      <class name="commerce_service.Updateuser">
-        <methods>
-          <include name="login_user"/>
-          <include name="update_user"/>
-        </methods>
-      </class> <!-- commerce_service.Updateuser -->
-      <class name="commerce_service.Getaddressofalluser">
-        <methods>
-          <include name="login_user"/>
-          <include name="address_of_alluser"/>
-        </methods>
-      </class> <!-- commerce_service.Getaddressofalluser -->
       <class name="commerce_service.Updateusername">
         <methods>
           <include name="login_user"/>
           <include name="update_name"/>
         </methods>
       </class> <!-- commerce_service.Updateusername -->
-      <class name="commerce_service.Createaddress">
-        <methods>
-          <include name="login_user"/>
-          <include name="create_address"/>
-        </methods>
-      </class> <!-- commerce_service.Createaddress -->
     </classes>
   </test> <!-- Report Test(failed) -->
 </suite> <!-- Failed suite [API'S Suite] -->

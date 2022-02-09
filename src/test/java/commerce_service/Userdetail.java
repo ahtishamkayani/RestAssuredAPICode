@@ -8,12 +8,11 @@ public class Userdetail extends Login {
 	@Test(priority = 3)
 
 	public void get_detail() {
-		Data obj1= new Data();
-		given().header("Authorization",accessToken).header("Content-Type",obj1.Content_Type).header("x-site-context", obj1.Site_context)
-		.header("x-api-key", obj1.Api_key ).get(obj1.Base_url + "/user/" + U_id).then()
-				.statusCode(200).log().all();
+		Data data = new Data();
+		given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
+				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key)
+				.get(data.Base_url + "/user/" + User_id).then().statusCode(200).log().all();
 
-		System.out.println("the id of userrr " + U_id);
 	}
 
 }
