@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API'S Suite">
+	<test thread-count="5" name="Report Test">
+		<classes>
+			<class name="Negative_scenario.Createlocaluser" />
+			<class name="Negative_scenario.Createinvalidemnam" />
+			<class name="Negative_scenario.Createwithspaces" />
+			<class name="Negative_scenario.Createblankuser" />
+			<class name="Negative_scenario.Createwithoutprovider" />
+			<class name="Negative_scenario.Createwithoutdata" />
+			<class name="Negative_scenario.Createwithoutbody" />
+			<class name="Negative_scenario.Createwithoutpassword" />
+			<class name="Negative_scenario.Createspaceinpassword" />
+			<class name="Negative_scenario.Loginuser" />
+			<class name="Negative_scenario.Loginwithinvalidname" />
+			<class name="Negative_scenario.Loginwithoutbody" />
+			<class name="Negative_scenario.Loginwithoutpassword" />
+			<class name="Negative_scenario.Logininvalidpassword" />
+			<class name="Negative_scenario.Rsetpasswithemail" />
+			<class name="Negative_scenario.Rsetpasswithoutbody" />
+			<class name="Negative_scenario.Resetpasswithinvalid" />
+			<class name="Negative_scenario.Chngpasswithoutnew" />
+			<class name="Negative_scenario.Chngpasswithoutold" />
+			<class name="Negative_scenario.Chngpasswithoutbody" />
+			<class name="Negative_scenario.Chngpasswithinvalidold" />
+			<class name="Negative_scenario.Chngpasswithspacenew" />
+			<class name="Negative_scenario.Chngpasswithblanknew" />
+
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

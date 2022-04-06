@@ -9,9 +9,9 @@ public class Deleteaddress extends Createaddress {
 	public void del_address() {
 		Data data = new Data();
 
-		given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
-				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key)
-				.get(data.Base_url + "/user/" + User_id + "/address/" + address_id).then().statusCode(200).log().all();
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey)
+				.delete(data.baseUrl + "/user/" + userId + "/address/" + addressId).then().statusCode(200).log().all();
 
 	}
 }

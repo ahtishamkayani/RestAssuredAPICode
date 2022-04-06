@@ -6,17 +6,17 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 public class Resetpasword extends Login {
-	@Test(priority = 2)
+	@Test(priority = 4)
 	public void reset_password() {
-		Data obj1 = new Data();
+		Data data = new Data();
 		Createuser name = new Createuser();
 		JSONObject request = new JSONObject();
 
 		request.put("username", Name);
 
-		given().header("Authorization", accessToken).header("Content-Type", obj1.Content_Type)
-				.header("x-site-context", obj1.Site_context).header("x-api-key", obj1.Api_key)
-				.body(request.toJSONString()).patch(obj1.Base_url + "/auth/local/reset").then().statusCode(200).log()
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey)
+				.body(request.toJSONString()).patch(data.baseUrl + "/auth/local/reset").then().statusCode(200).log()
 				.all();
 
 	}

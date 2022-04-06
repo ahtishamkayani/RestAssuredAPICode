@@ -9,9 +9,9 @@ public class Setuserdefaultaddress extends Createaddress {
 	public void set_address() {
 		Data data = new Data();
 
-		given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
-				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key)
-				.post(data.Base_url + "/user/" + User_id + "/address/" + address_id + "/set").then().statusCode(200)
-				.log().all();
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey)
+				.post(data.baseUrl + "/user/" + userId + "/address/" + addressId + "/set").then().statusCode(200).log()
+				.all();
 	}
 }

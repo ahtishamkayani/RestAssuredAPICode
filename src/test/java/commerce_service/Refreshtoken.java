@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 public class Refreshtoken extends Login {
 	@Test(priority = 11)
 	public void token_refresh() {
-		Data obj1 = new Data();
+		Data data = new Data();
 
 		JSONObject request = new JSONObject();
 
-		request.put("refreshToken", refresh_token);
-		given().header("Authorization", accessToken).header("Content-Type", obj1.Content_Type)
-				.header("x-site-context", obj1.Site_context).header("x-api-key", obj1.Api_key)
-				.body(request.toJSONString()).when().post(obj1.Base_url + "/auth/local/refresh").then().statusCode(200)
+		request.put("refreshToken", refreshToken);
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey)
+				.body(request.toJSONString()).when().post(data.baseUrl + "/auth/local/refresh").then().statusCode(200)
 				.log().all();
 
 	}

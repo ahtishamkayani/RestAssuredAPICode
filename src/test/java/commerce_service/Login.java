@@ -11,12 +11,12 @@ import org.testng.annotations.Test;
 
 public class Login {
 
-	public String accessToken, User_id, refresh_token, Password, Name;
+	public String accessToken, userId, refreshToken, Name, Password;
 
 	@Test(priority = 1)
 	public void login_user() throws Exception {
 		Createuser name = new Createuser();
-		Data obj1 = new Data();
+		Data data = new Data();
 
 		JSONObject request = new JSONObject();
 		request.put("username", name.userName);
@@ -24,20 +24,19 @@ public class Login {
 		Name = name.userName;
 		Password = name.userPassword;
 
-		accessToken = given().header("Content-Type", obj1.Content_Type).header("x-site-context", obj1.Site_context)
-				.header("x-api-key", obj1.Api_key).body(request.toJSONString()).when()
-				.post(obj1.Base_url + "/auth/local/login").then().statusCode(200).log().all().extract().jsonPath()
+		accessToken = given().header("Content-Type", data.contentType).header("x-api-key", data.apiKey)
+				.header("x-site-context", data.siteContext).body(request.toJSONString()).when()
+				.post(data.baseUrl + "/auth/local/login").then().statusCode(200).log().all().extract().jsonPath()
 				.getString("accessToken");
-		
 
-		User_id = given().header("Content-Type", obj1.Content_Type).header("x-site-context", obj1.Site_context)
-				.header("x-api-key", obj1.Api_key).body(request.toJSONString()).when()
-				.post(obj1.Base_url + "/auth/local/login").then().statusCode(200).log().all().extract().jsonPath()
+		userId = given().header("Content-Type", data.contentType).header("x-api-key", data.apiKey)
+				.header("x-site-context", data.siteContext).body(request.toJSONString()).when()
+				.post(data.baseUrl + "/auth/local/login").then().statusCode(200).log().all().extract().jsonPath()
 				.getString("_id");
 
-		refresh_token = given().header("Content-Type", obj1.Content_Type).header("x-site-context", obj1.Site_context)
-				.header("x-api-key", obj1.Api_key).body(request.toJSONString()).when()
-				.post(obj1.Base_url + "/auth/local/login").then().statusCode(200).log().all().extract().jsonPath()
+		refreshToken = given().header("Content-Type", data.contentType).header("x-api-key", data.apiKey)
+				.header("x-site-context", data.siteContext).body(request.toJSONString()).when()
+				.post(data.baseUrl + "/auth/local/login").then().statusCode(200).log().all().extract().jsonPath()
 				.getString("refreshToken");
 
 	}

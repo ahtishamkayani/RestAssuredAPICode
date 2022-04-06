@@ -6,15 +6,15 @@ import com.github.javafaker.Faker;
 
 public class Data extends Readpropertyfile {
 
-	String password = LoadProperties().getProperty("password");
-	String Content_Type = LoadProperties().getProperty("Content-Type");
-	String Api_key = LoadProperties().getProperty("x-api-key");
-	String Site_context = LoadProperties().getProperty("x-site-context");
-	String Base_url = LoadProperties().getProperty("url");
-	String Newuser = LoadProperties().getProperty("newUsername");
-	String Address = LoadProperties().getProperty("Address1");
-	String Create_address = LoadProperties().getProperty("Address2");
-	String Newpassword = LoadProperties().getProperty("newPassword");
+	
+	public String contentType = LoadProperties().getProperty("Content-Type");
+	public String apiKey = LoadProperties().getProperty("x-api-key");
+	public String siteContext = LoadProperties().getProperty("x-site-context");
+	public String baseUrl = LoadProperties().getProperty("url");
+	public String Address = LoadProperties().getProperty("Address1");
+	public String createAddress = LoadProperties().getProperty("Address2");
+	public String Password = LoadProperties().getProperty("password");
+	
 
 	@Test(priority = -1)
 	public static void email() {

@@ -11,11 +11,9 @@ public class Updateaddress extends Createaddress {
 	public void update_address() {
 		JSONObject request = new JSONObject();
 		Data data = new Data();
-
-		given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
-				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key).body(data.Address).when()
-				.patch(data.Base_url + "/user/" + User_id + "/address/" + address_id).then().statusCode(200).log()
-				.all();
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey).body(data.Address).when()
+				.patch(data.baseUrl + "/user/" + userId + "/address/" + addressId).then().statusCode(200).log().all();
 
 	}
 }

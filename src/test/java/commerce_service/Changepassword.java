@@ -6,19 +6,20 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 public class Changepassword extends Login {
-	
+
 	@Test(priority = 15)
 	public void change_password() {
 		JSONObject request = new JSONObject();
 
 		Data data = new Data();
-		request.put("userId", User_id);
+		request.put("userId", userId);
 		request.put("oldPassword", Password);
-		request.put("newPassword", Password );//User_id +"_Fabric"
+		request.put("newPassword", Password);// User_id +"_Fabric"
 
-		given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
-				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key)
-				.body(request.toJSONString()).patch(data.Base_url + "/auth/change-password").then().statusCode(200).log().all();
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey)
+				.body(request.toJSONString()).patch(data.baseUrl + "/auth/change-password").then().statusCode(200).log()
+				.all();
 
-			}
+	}
 }

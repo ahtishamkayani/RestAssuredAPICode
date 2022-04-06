@@ -3,9 +3,11 @@
 <suite name="API'S Suite">
 	<test thread-count="5" name="Report Test">
 		<classes>
-			<class name="commerce_service.Createuser" />
-			<class name="commerce_service.Login" />
-				
+			<class name="Negative_scenario.Createlocaluser" />
+			<class name="Negative_scenario.Loginuser" />
+			<class name="Negative_scenario.Chngpasswithotherid" />
+			
+
 
 		</classes>
 	</test> <!-- Test -->

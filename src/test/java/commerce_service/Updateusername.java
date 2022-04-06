@@ -16,8 +16,8 @@ public class Updateusername extends Login {
 		Faker faker = new Faker();
 		String firstName = faker.name().firstName();
 		String lastName = faker.name().lastName();
-		String Test = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@xbox.com";
-		newName = Test;
+		String newName = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@xbox.com";
+		
 
 		JSONObject request = new JSONObject();
 		Data data = new Data();
@@ -25,9 +25,9 @@ public class Updateusername extends Login {
 		request.put("oldUsername", Name);
 		request.put("newUsername", newName);
 
-		given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
-				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key)
-				.body(request.toJSONString()).patch(data.Base_url + "/user/" + User_id + "/username").then()
+		given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey)
+				.body(request.toJSONString()).patch(data.baseUrl + "/user/" + userId + "/username").then()
 				.statusCode(200).log().all();
 	}
 

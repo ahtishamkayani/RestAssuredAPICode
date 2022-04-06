@@ -6,16 +6,16 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 public class Createaddress extends Login {
-	public String address_id;
+	public String addressId;
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void create_address() {
 		Data data = new Data();
 
-		address_id = given().header("Authorization", accessToken).header("Content-Type", data.Content_Type)
-				.header("x-site-context", data.Site_context).header("x-api-key", data.Api_key).body(data.Create_address)
-				.when().post(data.Base_url + "/user/" + User_id + "/address").then().statusCode(200).log().all()
-				.extract().jsonPath().getString("address._id[0]");
+		addressId = given().header("Authorization", accessToken).header("Content-Type", data.contentType)
+				.header("x-site-context", data.siteContext).header("x-api-key", data.apiKey).body(data.createAddress)
+				.when().post(data.baseUrl + "/user/" + userId + "/address").then().statusCode(200).log().all().extract()
+				.jsonPath().getString("address._id[0]");
 
 	}
 }

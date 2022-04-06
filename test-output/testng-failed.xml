@@ -3,12 +3,82 @@
 <suite name="Failed suite [API&#039;S Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Report Test(failed)">
     <classes>
-      <class name="commerce_service.Updateusername">
+      <class name="Negative_scenario.Rsetpasswithemail">
+        <methods>
+          <include name="reset_password_email"/>
+        </methods>
+      </class> <!-- Negative_scenario.Rsetpasswithemail -->
+      <class name="Negative_scenario.Createinvalidemnam">
+        <methods>
+          <include name="invalid_name_email"/>
+        </methods>
+      </class> <!-- Negative_scenario.Createinvalidemnam -->
+      <class name="Negative_scenario.Chngpasswithoutold">
+        <methods>
+          <include name="change_without_old"/>
+        </methods>
+      </class> <!-- Negative_scenario.Chngpasswithoutold -->
+      <class name="Negative_scenario.Rsetpasswithoutbody">
+        <methods>
+          <include name="reset_without_body"/>
+        </methods>
+      </class> <!-- Negative_scenario.Rsetpasswithoutbody -->
+      <class name="Negative_scenario.Loginwithinvalidname">
+        <methods>
+          <include name="login_invalide_user"/>
+        </methods>
+      </class> <!-- Negative_scenario.Loginwithinvalidname -->
+      <class name="Negative_scenario.Loginwithoutbody">
+        <methods>
+          <include name="login_without_body"/>
+        </methods>
+      </class> <!-- Negative_scenario.Loginwithoutbody -->
+      <class name="Negative_scenario.Chngpasswithoutbody">
+        <methods>
+          <include name="change_without_body"/>
+        </methods>
+      </class> <!-- Negative_scenario.Chngpasswithoutbody -->
+      <class name="Negative_scenario.Createwithspaces">
+        <methods>
+          <include name="blank_email_username"/>
+        </methods>
+      </class> <!-- Negative_scenario.Createwithspaces -->
+      <class name="Negative_scenario.Resetpasswithinvalid">
+        <methods>
+          <include name="reset_invalid_username"/>
+        </methods>
+      </class> <!-- Negative_scenario.Resetpasswithinvalid -->
+      <class name="Negative_scenario.Chngpasswithinvalidold">
+        <methods>
+          <include name="change_invalid_oldpass"/>
+        </methods>
+      </class> <!-- Negative_scenario.Chngpasswithinvalidold -->
+      <class name="Negative_scenario.Chngpasswithoutnew">
+        <methods>
+          <include name="change_without_new"/>
+        </methods>
+      </class> <!-- Negative_scenario.Chngpasswithoutnew -->
+      <class name="Negative_scenario.Chngpasswithblanknew">
         <methods>
           <include name="login_user"/>
-          <include name="update_name"/>
+          <include name="change_blank_newpass"/>
         </methods>
-      </class> <!-- commerce_service.Updateusername -->
+      </class> <!-- Negative_scenario.Chngpasswithblanknew -->
+      <class name="Negative_scenario.Createwithoutbody">
+        <methods>
+          <include name="create_without_body"/>
+        </methods>
+      </class> <!-- Negative_scenario.Createwithoutbody -->
+      <class name="Negative_scenario.Loginwithoutpassword">
+        <methods>
+          <include name="login_without_password"/>
+        </methods>
+      </class> <!-- Negative_scenario.Loginwithoutpassword -->
+      <class name="Negative_scenario.Logininvalidpassword">
+        <methods>
+          <include name="login_invalid_password"/>
+        </methods>
+      </class> <!-- Negative_scenario.Logininvalidpassword -->
     </classes>
   </test> <!-- Report Test(failed) -->
 </suite> <!-- Failed suite [API'S Suite] -->
